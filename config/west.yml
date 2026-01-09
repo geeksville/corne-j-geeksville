@@ -6,6 +6,8 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: prospector
+      url-base: https://github.com/t-ogura      
   projects:
     - name: eyelash_corne
       url: https://github.com/geeksville/corne-j-geeksville
@@ -14,5 +16,12 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+
+    # Add bluetooth status advertisements for Prospector
+    # per https://github.com/t-ogura/zmk-config-prospector?tab=readme-ov-file#step-1-add-module-to-keyboard
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v2.0.0  # Use specific version tag
+      path: modules/prospector-zmk-module      
   self:
     path: config
