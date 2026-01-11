@@ -9,9 +9,9 @@ manifest:
     - name: prospector
       url-base: https://github.com/t-ogura      
   projects:
-    - name: eyelash_corne
-      url: https://github.com/geeksville/corne-j-geeksville
-      revision: main
+    #- name: eyelash_corne
+    #  url: https://github.com/geeksville/corne-j-geeksville
+    #  revision: main
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
